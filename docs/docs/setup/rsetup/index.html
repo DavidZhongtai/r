@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" R Setup # ">
+<meta name="description" content="R Setup # You may be wondering first, how do we actually install R? R does not naturally come preinstalled on your computer so you will have to install it. We will now go through some of the steps of getting R Setup on your computer. R comes in two different parts. First, there is the language itself (R). Then, there is the interface which allows you to type code (RStudio).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Setting up R" />
-<meta property="og:description" content=" R Setup # " />
+<meta property="og:description" content="R Setup # You may be wondering first, how do we actually install R? R does not naturally come preinstalled on your computer so you will have to install it. We will now go through some of the steps of getting R Setup on your computer. R comes in two different parts. First, there is the language itself (R). Then, there is the interface which allows you to type code (RStudio)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://example.org/docs/setup/rsetup/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css" integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.d23cf387beaf9e7c2806b7fe8e4247ab9546875a114065a3d73e24cacdf55ddc.js" integrity="sha256-0jzzh76vnnwoBrf&#43;jkJHq5VGh1oRQGWj1z4kys31Xdw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.75a99ea886e6e1e1a11e09fc4b66d7208a410db7b2a461743c37e073022084ff.js" integrity="sha256-dameqIbm4eGhHgn8S2bXIIpBDbeypGF0PDfgcwIghP8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -296,7 +296,14 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#downloading-and-installing-r-linkhttpscranr-projectorg">Downloading and Installing R <a href="https://cran.r-project.org/">Link</a></a></li>
+    <li><a href="#downloading-and-installing-r-studio-linkhttpswwwrstudiocom">Downloading and Installing R-Studio <a href="https://www.rstudio.com/">Link</a></a></li>
+    <li><a href="#navigating-r">Navigating R</a></li>
+    <li><a href="#getting-help-in-r">Getting Help in R</a></li>
+  </ul>
+</nav>
 
 
 
@@ -311,6 +318,36 @@ https://github.com/alex-shpak/hugo-book
   R Setup
   <a class="anchor" href="#r-setup">#</a>
 </h1>
+<p>You may be wondering first, how do we actually install R? R does not naturally come preinstalled on your computer so you will have to install it. We will now go through some of the steps of getting R Setup on your computer. R comes in two different parts. First, there is the language itself (R). Then, there is the interface which allows you to type code (RStudio). In order to successfully complete this class, you will need both R and RStudio.</p>
+<h2 id="downloading-and-installing-r-linkhttpscranr-projectorg">
+  Downloading and Installing R <a href="https://cran.r-project.org/">Link</a>
+  <a class="anchor" href="#downloading-and-installing-r-linkhttpscranr-projectorg">#</a>
+</h2>
+<p>You will have to choose the appropriate operating system. If you are using Ubuntu, there are special instructions if you want the newest version of R (v3.6.1 as of writing this document). This is mainly because of various kernel issues. To save time, you can also use the default which is to install an older version.</p>
+<p>The link is found at the website above. Please download the right installer for your operating system (MacOS, Windows, Linux), and follow the onscreen prompts to install. You will not need to change any values during the installation process as the default values will suffice.</p>
+<h2 id="downloading-and-installing-r-studio-linkhttpswwwrstudiocom">
+  Downloading and Installing R-Studio <a href="https://www.rstudio.com/">Link</a>
+  <a class="anchor" href="#downloading-and-installing-r-studio-linkhttpswwwrstudiocom">#</a>
+</h2>
+<p>This is different from R. R itself is a programming language. R-Studio is an Integrated Development Environment (IDE) which allows you to program with R interactively. It contains tools (such as shortcut buttons and syntax autocmpletion and highlighting) that make coding in R much easier. In addition to that, it allows you to create files, save functions, and alot more other features that will be useful in this class.</p>
+<p>The link to download is also found at the website above. Please download the right installer for your operating system (MacOS, Windows, Linux), and follow the onscreen prompts to install. You will not need to change any values during the installation process as the default values will suffice.</p>
+<h2 id="navigating-r">
+  Navigating R
+  <a class="anchor" href="#navigating-r">#</a>
+</h2>
+<p>Whoa! After setting up and downloading R, you may be faced with alot of different choices and such a big screen. What do you do now? The largest most menu on the left is your console. This is where you can type commands in R to the computer and then get a result back. For example, try typing some basic commands such as <code>5 + 5</code> or <code>3 * 4</code>. What do you get? This is sorta like your own little calculator here. We will cover alot more of the functionality of R-Studio as we go onto the semester.</p>
+<p>TODO: Add R Studio Files</p>
+<p>TODO: Running R Studio</p>
+<h2 id="getting-help-in-r">
+  Getting Help in R
+  <a class="anchor" href="#getting-help-in-r">#</a>
+</h2>
+<p>This is probably one of the most important things and is useful for any programming langauge, not only R; and that is &ldquo;How do I get help in &lt;Insert Language&gt;&rdquo;. There are three main ways to get help in R.</p>
+<ol>
+<li>Use Google. Simply put the topic you are confused about/need help with, into <a href="https://google.com">Google</a> and you should recieve a plethora of resources regarding that.</li>
+<li>Using the <code>help()</code> method. What you can do is to call <code>help()</code> to see if there is a help page on it. For example, if I didn&rsquo;t know what <code>%</code> is, I would type <code>help(&quot;%&quot;)</code> into the command prompt.</li>
+<li><a href="https://rseek.org">RSeek.org</a> is like Google, but for R. Enough Said.</li>
+</ol>
 </article>
  
       
@@ -362,7 +399,14 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#downloading-and-installing-r-linkhttpscranr-projectorg">Downloading and Installing R <a href="https://cran.r-project.org/">Link</a></a></li>
+    <li><a href="#downloading-and-installing-r-studio-linkhttpswwwrstudiocom">Downloading and Installing R-Studio <a href="https://www.rstudio.com/">Link</a></a></li>
+    <li><a href="#navigating-r">Navigating R</a></li>
+    <li><a href="#getting-help-in-r">Getting Help in R</a></li>
+  </ul>
+</nav>
 
 
  

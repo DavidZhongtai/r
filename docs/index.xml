@@ -39,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/docs/setup/rsetup/</guid>
-      <description> R Setup # </description>
+      <description>R Setup # You may be wondering first, how do we actually install R? R does not naturally come preinstalled on your computer so you will have to install it. We will now go through some of the steps of getting R Setup on your computer. R comes in two different parts. First, there is the language itself (R). Then, there is the interface which allows you to type code (RStudio).</description>
     </item>
     
     <item>
@@ -48,7 +48,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/docs/setup/types/</guid>
-      <description> Types # </description>
+      <description> Types # We cover how types work in R and how you should be cognizant of them.
+What is a type in R? # </description>
     </item>
     
     <item>
