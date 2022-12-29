@@ -1,38 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on STAT400 R Guide</title>
-    <link>http://example.org/</link>
-    <description>Recent content in Introduction on STAT400 R Guide</description>
+    <title>Setup and Basics on STAT400 R Guide</title>
+    <link>http://example.org/docs/setup/</link>
+    <description>Recent content in Setup and Basics on STAT400 R Guide</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Basic Plotting</title>
-      <link>http://example.org/docs/plots/basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/plots/basics/</guid>
-      <description> Basic Plotting # </description>
-    </item>
-    
-    <item>
-      <title>Installing R Markdown</title>
-      <link>http://example.org/docs/rmarkdown/installrmd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/rmarkdown/installrmd/</guid>
-      <description> Installing R Markdown # </description>
-    </item>
-    
-    <item>
-      <title>Intro to R Markdown</title>
-      <link>http://example.org/docs/rmarkdown/basicrmd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/rmarkdown/basicrmd/</guid>
-      <description> Intro to R Markdown # </description>
-    </item>
-    
+    <language>en-us</language><atom:link href="http://example.org/docs/setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up R</title>
       <link>http://example.org/docs/setup/rsetup/</link>
@@ -58,15 +31,6 @@
       
       <guid>http://example.org/docs/setup/variables/</guid>
       <description> Variables and Operations in R # </description>
-    </item>
-    
-    <item>
-      <title>Advanced Plotting</title>
-      <link>http://example.org/docs/plots/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/plots/advanced/</guid>
-      <description> Advanced Plotting # </description>
     </item>
     
     <item>

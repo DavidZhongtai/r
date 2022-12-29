@@ -1,6 +1,6 @@
 {
-  "name": "My New Hugo Site",
-  "short_name": "My New Hugo Site",
+  "name": "STAT400 R Guide",
+  "short_name": "STAT400 R Guide",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
