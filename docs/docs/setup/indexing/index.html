@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="More on Vectors and Indexing # After learning more about types and variables, lets talk more about vectors and indexing inside of R.
+More Vectors in R # Vectors are the most basic R data objects and there are six types of atomic vectors. They are logical, integer, double, complex, character and raw. When you write a single value in R, it becomes a vector of length 1 and belongs to one of the above types.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="More on Vectors and Indexing" />
+<meta property="og:description" content="More on Vectors and Indexing # After learning more about types and variables, lets talk more about vectors and indexing inside of R.
+More Vectors in R # Vectors are the most basic R data objects and there are six types of atomic vectors. They are logical, integer, double, complex, character and raw. When you write a single value in R, it becomes a vector of length 1 and belongs to one of the above types." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://r.davidan.dev/docs/setup/indexing/" /><meta property="article:section" content="docs" />
+
+
+
+<title>More on Vectors and Indexing | STAT 200/400 R Guide</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css" integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.effe5d2352f2c693279c24b3ddf61b0f01ed6fefcedd91ce91545eeab8147e6b.js" integrity="sha256-7/5dI1LyxpMnnCSz3fYbDwHtb&#43;/O3ZHOkVRe6rgUfms=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>STAT 200/400 R Guide</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Setup and Basics</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/setup/rsetup/" class="">Setting up R</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/setup/types/" class="">Types and Variables</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/setup/indexing/" class="active">More on Vectors and Indexing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/setup/loops/" class="">Loops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/setup/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>R Markdown</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/rmarkdown/installrmd/" class="">Installing R Markdown</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/rmarkdown/basicrmd/" class="">Intro to R Markdown</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Plotting and Visualization</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/plots/basics/" class="">Basic Plotting</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/plots/advanced/" class="">Advanced Plotting</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>More on Vectors and Indexing</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#more-vectors-in-r"><strong>More</strong> Vectors in R</a></li>
+    <li><a href="#useful-vector-functions">Useful Vector Functions</a></li>
+    <li><a href="#accessing-elements-of-vectors">Accessing Elements of Vectors</a></li>
+    <li><a href="#repeating-vectors">Repeating Vectors</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="more-on-vectors-and-indexing">
+  More on Vectors and Indexing
+  <a class="anchor" href="#more-on-vectors-and-indexing">#</a>
+</h1>
+<p>After learning more about types and variables, lets talk more about vectors and indexing inside of R.</p>
+<h2 id="more-vectors-in-r">
+  <strong>More</strong> Vectors in R
+  <a class="anchor" href="#more-vectors-in-r">#</a>
+</h2>
+<p>Vectors are the most basic R data objects and there are six types of atomic vectors. They are logical, integer, double, complex, character and raw. When you write a single value in R, it becomes a vector of length 1 and belongs to one of the above types. Essentially, they are a list of items that are the same type.</p>
+<p>To make a vector, you can use the <code>c()</code> function and seperate the items inside of the vector by a comma. For example, if we wanted to create a vector of restaurants in the UC area, we can do the following:</p>
+<pre><code>&gt; food &lt;- c(&quot;Cravings&quot;, &quot;Jerusalem&quot;, &quot;Sticky Rice&quot;)
+&gt; food
+[1] &quot;Cravings&quot; &quot;Jerusalem&quot; &quot;Sticky Rice&quot;
+</code></pre>
+<p>If we wanted to create a vector with numerical values in a sequence, we can use the <code>:</code> operator. For example, if I wanted a vector with the numbers 1-10 in a vector, I can do the following:</p>
+<pre><code>&gt; coolNumbers &lt;- 1:10
+&gt; coolNumbers
+[1] 1 2 3 4 5 6 7 8 9 10
+</code></pre>
+<h2 id="useful-vector-functions">
+  Useful Vector Functions
+  <a class="anchor" href="#useful-vector-functions">#</a>
+</h2>
+<p>If we wanted to see the amount of elements inside of the vector, we can use the <code>length()</code> function</p>
+<pre><code>&gt; food &lt;- c(&quot;Cravings&quot;, &quot;Jerusalem&quot;, &quot;Sticky Rice&quot;)
+&gt; length(food)
+[1] 3
+</code></pre>
+<p>Also, we can also sort a vector as well. Using strings, it goes alphabetically while numeric values are sorted ascending.</p>
+<pre><code>&gt; food &lt;- c(&quot;Cravings&quot;,  &quot;Sticky Rice&quot;, &quot;Jerusalem&quot;)
+&gt; sort(food)
+[1] &quot;Cravings&quot; &quot;Jerusalem&quot; &quot;Sticky Rice&quot;
+
+&gt; numbers &lt;- c(1,4,5,2,3,8)
+&gt; sort(numbers)
+[1] 1 2 3 4 5 8
+</code></pre>
+<h2 id="accessing-elements-of-vectors">
+  Accessing Elements of Vectors
+  <a class="anchor" href="#accessing-elements-of-vectors">#</a>
+</h2>
+<p>To access elements of vectors, you use this technique known as indexing which is utilizing <code>[]</code>. For example, if I wanted to access the first element of vector, I would use <code>[1]</code>. Keep in mind that R uses 1-based indexing (arrays start at 1) while a majority of programming languages use 0-based indexing (arrays start at 0).</p>
+<pre><code>&gt; food &lt;- c(&quot;Cravings&quot;,  &quot;Sticky Rice&quot;, &quot;Jerusalem&quot;)
+&gt; food[2]
+[1] &quot;Sticky Rice&quot;
+</code></pre>
+<h2 id="repeating-vectors">
+  Repeating Vectors
+  <a class="anchor" href="#repeating-vectors">#</a>
+</h2>
+<p>Say if you wanted to repeat a sequence of vectors, you can use the <code>rep()</code> function. There are two variants of it. These are <code>each</code> and <code>times</code>. If we wanted to repeat each element a number of times consecutively, we would use <code>each</code> as the following:</p>
+<pre><code>&gt; numbers &lt;- rep(c(1,2,3), each = 3)
+&gt; numbers
+[1] 1 1 1 2 2 2 3 3 3
+</code></pre>
+<p>However, if wanted to string a sequence together an amount of times, we use <code>times</code> as following:</p>
+<pre><code>&gt; numbers &lt;- rep(c(1,2,3), times = 3)
+&gt; numbers
+[1] 1 2 3 1 2 3 1 2 3
+</code></pre>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        <div class="flex flex-wrap justify-between">
+
+    
+    
+    
+    
+    </div>
+    
+    
+    
+      <script>(function(){function e(n){const e=window.getSelection(),t=document.createRange();t.selectNodeContents(n),e.removeAllRanges(),e.addRange(t)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+    
+    
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#more-vectors-in-r"><strong>More</strong> Vectors in R</a></li>
+    <li><a href="#useful-vector-functions">Useful Vector Functions</a></li>
+    <li><a href="#accessing-elements-of-vectors">Accessing Elements of Vectors</a></li>
+    <li><a href="#repeating-vectors">Repeating Vectors</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

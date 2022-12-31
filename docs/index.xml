@@ -2,98 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on STAT 200/400 R Guide</title>
-    <link>http://example.org/</link>
+    <link>https://r.davidan.dev/</link>
     <description>Recent content in Introduction on STAT 200/400 R Guide</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://r.davidan.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Plotting</title>
-      <link>http://example.org/docs/plots/basics/</link>
+      <link>https://r.davidan.dev/docs/plots/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/plots/basics/</guid>
+      <guid>https://r.davidan.dev/docs/plots/basics/</guid>
       <description> Basic Plotting # </description>
     </item>
     
     <item>
       <title>Installing R Markdown</title>
-      <link>http://example.org/docs/rmarkdown/installrmd/</link>
+      <link>https://r.davidan.dev/docs/rmarkdown/installrmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/rmarkdown/installrmd/</guid>
+      <guid>https://r.davidan.dev/docs/rmarkdown/installrmd/</guid>
       <description> Installing R Markdown # </description>
     </item>
     
     <item>
       <title>Intro to R Markdown</title>
-      <link>http://example.org/docs/rmarkdown/basicrmd/</link>
+      <link>https://r.davidan.dev/docs/rmarkdown/basicrmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/rmarkdown/basicrmd/</guid>
+      <guid>https://r.davidan.dev/docs/rmarkdown/basicrmd/</guid>
       <description> Intro to R Markdown # </description>
     </item>
     
     <item>
       <title>Setting up R</title>
-      <link>http://example.org/docs/setup/rsetup/</link>
+      <link>https://r.davidan.dev/docs/setup/rsetup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/setup/rsetup/</guid>
+      <guid>https://r.davidan.dev/docs/setup/rsetup/</guid>
       <description>R Setup # You may be wondering first, how do we actually install R? R does not naturally come preinstalled on your computer so you will have to install it. We will now go through some of the steps of getting R Setup on your computer. R comes in two different parts. First, there is the language itself (R). Then, there is the interface which allows you to type code (RStudio).</description>
     </item>
     
     <item>
-      <title>Types</title>
-      <link>http://example.org/docs/setup/types/</link>
+      <title>Types and Variables</title>
+      <link>https://r.davidan.dev/docs/setup/types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/setup/types/</guid>
-      <description> Types # We cover how types work in R and how you should be cognizant of them.
-What is a type in R? # </description>
-    </item>
-    
-    <item>
-      <title>Variables</title>
-      <link>http://example.org/docs/setup/variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/setup/variables/</guid>
-      <description> Variables and Operations in R # </description>
+      <guid>https://r.davidan.dev/docs/setup/types/</guid>
+      <description>Types and Variables # We cover how types work in R and how you should be cognizant of them.
+What are Variables and Types? # In its essence, a type is something that defines what the data can be. Without further ado, lets dive into what a type is. Before we do that, let us cover what a variable is. A variable is something that stores a value of different types.</description>
     </item>
     
     <item>
       <title>Advanced Plotting</title>
-      <link>http://example.org/docs/plots/advanced/</link>
+      <link>https://r.davidan.dev/docs/plots/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/plots/advanced/</guid>
+      <guid>https://r.davidan.dev/docs/plots/advanced/</guid>
       <description> Advanced Plotting # </description>
     </item>
     
     <item>
-      <title>Vectors and Indexing</title>
-      <link>http://example.org/docs/setup/vectors/</link>
+      <title>More on Vectors and Indexing</title>
+      <link>https://r.davidan.dev/docs/setup/indexing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/setup/vectors/</guid>
-      <description> Vectors and Indexing in R # </description>
+      <guid>https://r.davidan.dev/docs/setup/indexing/</guid>
+      <description>More on Vectors and Indexing # After learning more about types and variables, lets talk more about vectors and indexing inside of R.
+More Vectors in R # Vectors are the most basic R data objects and there are six types of atomic vectors. They are logical, integer, double, complex, character and raw. When you write a single value in R, it becomes a vector of length 1 and belongs to one of the above types.</description>
     </item>
     
     <item>
       <title>Loops</title>
-      <link>http://example.org/docs/setup/loops/</link>
+      <link>https://r.davidan.dev/docs/setup/loops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/setup/loops/</guid>
-      <description> Loops # </description>
+      <guid>https://r.davidan.dev/docs/setup/loops/</guid>
+      <description>Loops # R is perfect at performing repetitive tasks. Like wonderful. If you want an operation to be performed an amount of times, you use something we know as loops. By creating a loop, R will execute the commands inside the loop the amount of times specified.
+Loops are found in all programming languages, not only in R. They are a fundamental component of computers.
+For Loop # The for loop is one of the most commonly used loop structures if you want to predefine the amount of times a block of code is run.</description>
     </item>
     
     <item>
       <title>Functions</title>
-      <link>http://example.org/docs/setup/functions/</link>
+      <link>https://r.davidan.dev/docs/setup/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/setup/functions/</guid>
+      <guid>https://r.davidan.dev/docs/setup/functions/</guid>
       <description> Functions in R # </description>
     </item>
     

@@ -25,7 +25,7 @@ For any questions and inquiries, please reach out at davidzhongtaian @ gmail dot
 
 ---
 
-David An ❤️
+Made with ❤️ by David An
 
 <!--
     var panel = ram_design;

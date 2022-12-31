@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://r.davidan.dev'
 languageCode = 'en-us'
 title = 'STAT 200/400 R Guide'
 publishDir = 'docs'

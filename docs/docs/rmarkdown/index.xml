@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown on STAT 200/400 R Guide</title>
-    <link>http://example.org/docs/rmarkdown/</link>
+    <link>https://r.davidan.dev/docs/rmarkdown/</link>
     <description>Recent content in R Markdown on STAT 200/400 R Guide</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/docs/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://r.davidan.dev/docs/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing R Markdown</title>
-      <link>http://example.org/docs/rmarkdown/installrmd/</link>
+      <link>https://r.davidan.dev/docs/rmarkdown/installrmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/rmarkdown/installrmd/</guid>
+      <guid>https://r.davidan.dev/docs/rmarkdown/installrmd/</guid>
       <description> Installing R Markdown # </description>
     </item>
     
     <item>
       <title>Intro to R Markdown</title>
-      <link>http://example.org/docs/rmarkdown/basicrmd/</link>
+      <link>https://r.davidan.dev/docs/rmarkdown/basicrmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/rmarkdown/basicrmd/</guid>
+      <guid>https://r.davidan.dev/docs/rmarkdown/basicrmd/</guid>
       <description> Intro to R Markdown # </description>
     </item>
     
