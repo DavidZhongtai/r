@@ -92,5 +92,15 @@ For Loop # The for loop is one of the most commonly used loop structures if you 
 Introduction to Functions # We have already seen some functions in action. For example, c() creates a vector of elements inside. Other functions such as descriptive statistics methods (mean, median, mode, range) all have a method built in as well.</description>
     </item>
     
+    <item>
+      <title>Conditionals and Logicals</title>
+      <link>https://r.davidan.dev/docs/setup/logical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://r.davidan.dev/docs/setup/logical/</guid>
+      <description>Conditionals and Logicals # How do we be logical inside of R? For example, x + y does not imply any logic here, it just tells us to add things together. Conditional statements allow us to add logic into our functions, furthering making our functions better.
+Let us continue with an example. Say we want to return the predicted weather based on the current temperature in a function. We first provide the function below before going over it.</description>
+    </item>
+    
   </channel>
 </rss>

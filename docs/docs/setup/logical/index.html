@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Types and Variables # We cover how types work in R and how you should be cognizant of them.
-What are Variables and Types? # In its essence, a type is something that defines what the data can be. Without further ado, lets dive into what a type is. Before we do that, let us cover what a variable is. A variable is something that stores a value of different types.">
+<meta name="description" content="Conditionals and Logicals # How do we be logical inside of R? For example, x &#43; y does not imply any logic here, it just tells us to add things together. Conditional statements allow us to add logic into our functions, furthering making our functions better.
+Let us continue with an example. Say we want to return the predicted weather based on the current temperature in a function. We first provide the function below before going over it.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Types and Variables" />
-<meta property="og:description" content="Types and Variables # We cover how types work in R and how you should be cognizant of them.
-What are Variables and Types? # In its essence, a type is something that defines what the data can be. Without further ado, lets dive into what a type is. Before we do that, let us cover what a variable is. A variable is something that stores a value of different types." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Conditionals and Logicals" />
+<meta property="og:description" content="Conditionals and Logicals # How do we be logical inside of R? For example, x &#43; y does not imply any logic here, it just tells us to add things together. Conditional statements allow us to add logic into our functions, furthering making our functions better.
+Let us continue with an example. Say we want to return the predicted weather based on the current temperature in a function. We first provide the function below before going over it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://r.davidan.dev/docs/setup/types/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://r.davidan.dev/docs/setup/logical/" /><meta property="article:section" content="docs" />
 
 
 
-<title>Types and Variables | STAT 200/400 R Guide</title>
+<title>Conditionals and Logicals | STAT 200/400 R Guide</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css" integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin="anonymous">
@@ -97,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/setup/types/" class="active">Types and Variables</a>
+    <a href="/docs/setup/types/" class="">Types and Variables</a>
   
 
         </li>
@@ -149,7 +149,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/setup/logical/" class="">Conditionals and Logicals</a>
+    <a href="/docs/setup/logical/" class="active">Conditionals and Logicals</a>
   
 
         </li>
@@ -284,7 +284,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Types and Variables</strong>
+  <strong>Conditionals and Logicals</strong>
 
   <label for="toc-control">
     
@@ -298,12 +298,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#what-are-variables-and-types">What are Variables and Types?</a></li>
-    <li><a href="#assigning-and-using-variables">Assigning and Using Variables</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -314,48 +309,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="types-and-variables">
-  Types and Variables
-  <a class="anchor" href="#types-and-variables">#</a>
+  <article class="markdown"><h1 id="conditionals-and-logicals">
+  Conditionals and Logicals
+  <a class="anchor" href="#conditionals-and-logicals">#</a>
 </h1>
-<p>We cover how types work in R and how you should be cognizant of them.</p>
-<h2 id="what-are-variables-and-types">
-  What are Variables and Types?
-  <a class="anchor" href="#what-are-variables-and-types">#</a>
-</h2>
-<p>In its essence, a type is something that defines what the data can be. Without further ado, lets dive into what a type is. Before we do that, let us cover what a variable is. A variable is something that stores a value of different types. For example, the different types are</p>
-<ul>
-<li>
-<p><strong>Numeric</strong>: a number such as 1,2,3,4</p>
-</li>
-<li>
-<p><strong>String</strong>: These are words surrounded by quotation marks such as &ldquo;hello&rdquo;, &ldquo;world&rdquo;, &ldquo;32&rdquo;</p>
-</li>
-<li>
-<p><strong>Logical</strong>: These are boolean variables which can be either <code>TRUE</code> or <code>FALSE</code></p>
-</li>
-<li>
-<p><strong>Vector</strong>: A vector is a sequence of something that is the same type. Think of it as like a list or array. For example: these can be <code>1 2 3 4</code> or <code>&quot;hi&quot; &quot;this&quot; &quot;is&quot; &quot;stats&quot;</code></p>
-</li>
-<li>
-<p><strong>Matrix</strong>: A matrix is a rectangle of elements of the same type. You can think of it as a vector of vectors. For example:</p>
-<pre><code>  [xx] [,1] [,2]           [xx] [,1] [,2]
-  [1,]   1    3      or    [1,] &quot;hi&quot; &quot;hi&quot;
-  [2,]   2    4            [2,] &quot;hi&quot; &quot;hi&quot;
+<p>How do we be logical inside of R? For example, <code>x + y</code> does not imply any logic here, it just tells us to add things together. Conditional statements allow us to add logic into our functions, furthering making our functions better.</p>
+<p>Let us continue with an example. Say we want to return the predicted weather based on the current temperature in a function. We first provide the function below before going over it.</p>
+<pre><code>weatherPredict &lt;- function(temp) {
+    if (temp &gt;= 10 &amp;&amp; temp &lt;= 35) {
+        return(&quot;snow&quot;)
+    } else if (temp &gt; 35 &amp;&amp; temp &lt;= 65) {
+        return(&quot;rain&quot;)
+    } else {
+        return(&quot;sun&quot;)
+    }
+}
 </code></pre>
-</li>
-<li>
-<p><strong>List</strong>: A list is a vector but it allows different types. For example, a list can be <code>1, TRUE, &quot;hello&quot;</code></p>
-</li>
-</ul>
-<h2 id="assigning-and-using-variables">
-  Assigning and Using Variables
-  <a class="anchor" href="#assigning-and-using-variables">#</a>
-</h2>
-<p>Now you know what a variable is, how can you actually use them and manipulate them. The most basic thing to know is that you assign variables with <code>&lt;-</code>. Technically, you can also use <code>=</code> but only noobs do that. For example, if we want to assign <code>x</code> to the value of <code>7</code>, we can do the following: <code>x &lt;- 7</code>. If you want to see what is stored inside of <code>x</code>, you can type it into the command prompt and it should return <code>7</code>.</p>
-<p>Creating variables is useful because it allows you to reuse those values over and over again inside the current session. You should also see the variable appear on your right-hand side variables&rsquo; menu. In addition to that, you can also apply arithmatic operations to variables as you would do with numbers. For example, <code>x + y</code>, <code>x * y</code> are all valid operations. The same story can be said with strings and logicals such as <code>z &lt;- &quot;I AM STRING&quot;</code> or <code>x &lt;- TRUE</code></p>
-<p>In addition to that, variables are also case sensitive. The variables a <code>thisVariable</code>, <code>ThisVariable</code> and <code>THISVariable</code> are all different.</p>
-<p>TODO: DataFrame</p>
+<p>Here, we declare the same function declaration above where we make a function names <code>weatherPredict</code> which takes in one argument <code>temp</code>. Then, we use conditionals <code>if</code> in order to check conditionals. Generally, an <code>if-else</code> statement has the following syntax:</p>
+<pre><code>if (condition) {
+    code executed when condition is TRUE
+} else {
+    code executed when condition is FALSE
+}
+</code></pre>
 </article>
  
       
@@ -407,12 +383,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#what-are-variables-and-types">What are Variables and Types?</a></li>
-    <li><a href="#assigning-and-using-variables">Assigning and Using Variables</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  
