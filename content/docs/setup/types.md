@@ -30,3 +30,5 @@ Now you know what a variable is, how can you actually use them and manipulate th
 Creating variables is useful because it allows you to reuse those values over and over again inside the current session. You should also see the variable appear on your right-hand side variables' menu. In addition to that, you can also apply arithmatic operations to variables as you would do with numbers. For example, `x + y`, `x * y` are all valid operations. The same story can be said with strings and logicals such as `z <- "I AM STRING"` or `x <- TRUE`
 
 In addition to that, variables are also case sensitive. The variables a `thisVariable`, `ThisVariable` and `THISVariable` are all different.
+
+TODO: DataFrame
