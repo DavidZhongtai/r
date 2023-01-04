@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Intro to R Markdown # ">
+<meta name="description" content="Intro to R Markdown # You may be asking, why do we need to learn this. However, as important as it is to be able to create quality code, its equally as important to present that code in a readable format. Essentially, you want to develop the skills in order to deliver an effective presentation.
+Installing R Markdown # To use R Markdown, you want to install the rmarkdown package in R Studio.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Intro to R Markdown" />
-<meta property="og:description" content=" Intro to R Markdown # " />
+<meta property="og:description" content="Intro to R Markdown # You may be asking, why do we need to learn this. However, as important as it is to be able to create quality code, its equally as important to present that code in a readable format. Essentially, you want to develop the skills in order to deliver an effective presentation.
+Installing R Markdown # To use R Markdown, you want to install the rmarkdown package in R Studio." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://r.davidan.dev/docs/rmarkdown/basicrmd/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +19,7 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css" integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.3b32550392ee735763aad7ee0fe443261c42a7835be512c0f15e056cfc3e4106.js" integrity="sha256-OzJVA5Luc1djqtfuD&#43;RDJhxCp4Nb5RLA8V4FbPw&#43;QQY=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.bdf0d220e4503bc309295c45f59df31ad4ac658d4082342238c8a0b77ebe7e2f.js" integrity="sha256-vfDSIORQO8MJKVxF9Z3zGtSsZY1AgjQiOMigt36&#43;fi8=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -178,19 +180,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/rmarkdown/installrmd/" class="">Installing R Markdown</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/docs/rmarkdown/basicrmd/" class="active">Intro to R Markdown</a>
   
 
@@ -296,7 +285,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#installing-r-markdown">Installing R Markdown</a></li>
+  </ul>
+</nav>
 
 
 
@@ -311,6 +304,21 @@ https://github.com/alex-shpak/hugo-book
   Intro to R Markdown
   <a class="anchor" href="#intro-to-r-markdown">#</a>
 </h1>
+<p>You may be asking, why do we need to learn this. However, as important as it is to be able to create quality code, its equally as important to present that code in a readable format. Essentially, you want to develop the skills in order to deliver an effective presentation.</p>
+<h2 id="installing-r-markdown">
+  Installing R Markdown
+  <a class="anchor" href="#installing-r-markdown">#</a>
+</h2>
+<p>To use R Markdown, you want to install the <code>rmarkdown</code> package in R Studio. You also need to install any necessary dependencies. To do so, just make sure you have R Studio and R installed before this. What we can do is then run the following code statements:</p>
+<pre><code># Install from CRAN
+install.packages('rmarkdown', dep = TRUE)
+
+# Or if you want to test the development version,
+# install from GitHub
+if (!requireNamespace(&quot;devtools&quot;))
+    install.packages('devtools')
+devtools::install_github('rstudio/rmarkdown')
+</code></pre>
 </article>
  
       
@@ -362,7 +370,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#installing-r-markdown">Installing R Markdown</a></li>
+  </ul>
+</nav>
 
 
  

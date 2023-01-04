@@ -7,21 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://r.davidan.dev/docs/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installing R Markdown</title>
-      <link>https://r.davidan.dev/docs/rmarkdown/installrmd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://r.davidan.dev/docs/rmarkdown/installrmd/</guid>
-      <description> Installing R Markdown # </description>
-    </item>
-    
-    <item>
       <title>Intro to R Markdown</title>
       <link>https://r.davidan.dev/docs/rmarkdown/basicrmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://r.davidan.dev/docs/rmarkdown/basicrmd/</guid>
-      <description> Intro to R Markdown # </description>
+      <description>Intro to R Markdown # You may be asking, why do we need to learn this. However, as important as it is to be able to create quality code, its equally as important to present that code in a readable format. Essentially, you want to develop the skills in order to deliver an effective presentation.
+Installing R Markdown # To use R Markdown, you want to install the rmarkdown package in R Studio.</description>
     </item>
     
   </channel>
