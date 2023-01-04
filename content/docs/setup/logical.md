@@ -26,3 +26,5 @@ Here, we declare the same function declaration above where we make a function na
     } else {
         code executed when condition is FALSE
     }
+
+At that point, that is all you basically need with conditionals. The scope of this class does not require a heavy understanding in conditionals.
