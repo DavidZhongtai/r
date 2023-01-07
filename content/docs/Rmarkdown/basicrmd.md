@@ -19,3 +19,5 @@ To use R Markdown, you want to install the `rmarkdown` package in R Studio. You 
     if (!requireNamespace("devtools"))
         install.packages('devtools')
     devtools::install_github('rstudio/rmarkdown')
+
+After installing R Markdown, you will have the whole suite open to you to use.
